@@ -14,7 +14,7 @@ import net.skliggahack.module.setting.IntegerSetting;
 import net.skliggahack.module.setting.KeybindSetting;
 import org.lwjgl.glfw.GLFW;
 
-public class AutoInventoryTotem extends Module implements PlayerTickListener
+public class AutoInventoryTotemWIP extends Module implements PlayerTickListener
 {
 
 	private final BooleanSetting autoSwitch = new BooleanSetting.Builder()
@@ -76,7 +76,7 @@ public class AutoInventoryTotem extends Module implements PlayerTickListener
 			.setValue(activateKeybind)
 			.build();
 
-	public AutoInventoryTotem()
+	public AutoInventoryTotemWIP()
 	{
 		super("AutoInventoryTotem", "Automatically puts on totems for you when you are in inventory", false, Category.COMBAT);
 	}

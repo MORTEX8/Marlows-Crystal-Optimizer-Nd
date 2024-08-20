@@ -2,6 +2,7 @@ package net.skliggahack.module.modules.combat;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.EntityHitResult;
@@ -14,7 +15,7 @@ import net.skliggahack.module.setting.DecimalSetting;
 
 import static net.skliggahack.SkliggaHack.MC;
 
-public class TriggerBot extends Module implements PlayerTickListener
+public class TriggerBotWIP extends Module implements PlayerTickListener
 {
 
 	private final DecimalSetting cooldown = DecimalSetting.Builder.newInstance()
@@ -44,7 +45,7 @@ public class TriggerBot extends Module implements PlayerTickListener
 			.setAvailability(attackInAir::get)
 			.build();
 
-	public TriggerBot()
+	public TriggerBotWIP()
 	{
 		super("TriggerBot", "automatically attacks players for you", false, Category.COMBAT);
 	}
@@ -69,6 +70,8 @@ public class TriggerBot extends Module implements PlayerTickListener
 		if (MC.player.isUsingItem())
 			return;
 		if (!(MC.player.getMainHandStack().getItem() instanceof SwordItem))
+			return;
+		if (!(MC.player.getMainHandStack().getItem() instanceof AxeItem))
 			return;
 		HitResult hit = MC.crosshairTarget;
 		if (hit.getType() != HitResult.Type.ENTITY)

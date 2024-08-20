@@ -10,13 +10,13 @@ import net.skliggahack.module.Category;
 import net.skliggahack.module.Module;
 import org.lwjgl.opengl.GL11;
 
-public class SkliggaLogo extends Module implements RenderHudListener
+public class NdGhostLogo extends Module implements RenderHudListener
 {
 	private static final Identifier logoId = new Identifier("skliggas", "logo.png");
 
-	public SkliggaLogo()
+	public NdGhostLogo()
 	{
-		super("SkliggaLogo", "SKLIGGER", false, Category.HUD);
+		super("NdGhostLogo", "NIGGER", false, Category.HUD);
 	}
 
 	@Override

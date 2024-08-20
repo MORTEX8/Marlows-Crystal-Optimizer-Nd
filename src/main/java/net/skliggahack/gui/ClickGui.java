@@ -181,7 +181,7 @@ public class ClickGui
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.setShader(GameRenderer::getPositionTexShader);
 		RenderSystem.setShaderTexture(0, chubLogo);
-		DrawableHelper.drawTexture(matrices, 0, 3, 0, 0, 80, 60, 80, 60);
+		DrawableHelper.drawTexture(matrices, 0, 3, 0, 0, 80, 80, 80, 60);
 		GL11.glEnable(GL11.GL_CULL_FACE);
 		GL11.glDisable(GL11.GL_BLEND);
 	}

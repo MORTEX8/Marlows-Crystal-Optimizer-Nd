@@ -7,12 +7,12 @@ import net.skliggahack.module.Module;
 
 import static net.skliggahack.SkliggaHack.MC;
 
-public class SkliggaVersionText extends Module implements RenderHudListener
+public class NdGhostVersionText extends Module implements RenderHudListener
 {
 
-	public SkliggaVersionText()
+	public NdGhostVersionText()
 	{
-		super("SkliggaVersionText", "SkliggaHax 4.2.0", false, Category.HUD);
+		super("NdGhostVersionText", "NeverdiesGhost", false, Category.HUD);
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class SkliggaVersionText extends Module implements RenderHudListener
 	{
 		matrices.push();
 		matrices.translate(10, 60, 0);
-		MC.textRenderer.drawWithShadow(matrices, "SkliggaHax 4.2.0", 0, 0, 0x00CC00);
+		MC.textRenderer.drawWithShadow(matrices, "NeverdiesGhost", 0, 0, 0x00CC00);
 		matrices.pop();
 	}
 }
