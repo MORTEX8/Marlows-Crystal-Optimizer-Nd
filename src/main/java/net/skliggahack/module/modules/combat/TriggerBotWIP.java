@@ -71,8 +71,6 @@ public class TriggerBotWIP extends Module implements PlayerTickListener
 			return;
 		if (!(MC.player.getMainHandStack().getItem() instanceof SwordItem))
 			return;
-		if (!(MC.player.getMainHandStack().getItem() instanceof AxeItem))
-			return;
 		HitResult hit = MC.crosshairTarget;
 		if (hit.getType() != HitResult.Type.ENTITY)
 			return;
