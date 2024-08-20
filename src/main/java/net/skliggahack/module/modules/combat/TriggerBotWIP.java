@@ -47,7 +47,7 @@ public class TriggerBotWIP extends Module implements PlayerTickListener
 
 	public TriggerBotWIP()
 	{
-		super("TriggerBot", "automatically attacks players for you", false, Category.COMBAT);
+		super("TriggerBotWIP", "automatically attacks players for you", false, Category.COMBAT);
 	}
 
 	@Override

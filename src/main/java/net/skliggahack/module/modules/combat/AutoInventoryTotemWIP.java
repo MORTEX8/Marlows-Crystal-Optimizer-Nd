@@ -78,7 +78,7 @@ public class AutoInventoryTotemWIP extends Module implements PlayerTickListener
 
 	public AutoInventoryTotemWIP()
 	{
-		super("AutoInventoryTotem", "Automatically puts on totems for you when you are in inventory", false, Category.COMBAT);
+		super("AutoInventoryTotemWIP", "Automatically puts on totems for you when you are in inventory", false, Category.COMBAT);
 	}
 
 	private int invClock = -1;

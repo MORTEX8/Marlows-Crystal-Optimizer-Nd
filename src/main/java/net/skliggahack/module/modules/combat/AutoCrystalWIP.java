@@ -58,7 +58,7 @@ public class AutoCrystalWIP extends Module implements PlayerTickListener, ItemUs
 
 	public AutoCrystalWIP()
 	{
-		super("MarlowCrystal", "crystal like marlow", false, Category.COMBAT);
+		super("AutoCrystalWIP", "crystal like marlow", false, Category.COMBAT);
 	}
 
 	private int crystalBreakClock = 0;
